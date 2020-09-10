@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitActivity"
+    android:orientation="vertical"
+   android:background="@drawable/launch_two"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_submit"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/gads_one" />
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/back_two"
+            android:onClick="backToMain"
+            android:contentDescription="@string/todo_activity" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/project_submission"
+        android:textColor="#F49E1E"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="167dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:background="#FDFCFF"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:textColor="#101010"
+            android:textColorHint="@color/design_default_color_on_secondary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="176dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/first_name"
+            android:autofillHints=""
+            android:background="#FDFCFF"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:textColor="#101010"
+            android:textColorHint="@color/design_default_color_on_secondary"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/email_address"
+        android:layout_width="358dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints=""
+        android:background="#FDFCFF"
+        android:hint="@string/email_address"
+        android:textColorHint="@color/design_default_color_on_secondary"
+        android:inputType="textEmailAddress"
+        android:textColor="#101010"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/project_on_github"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints=""
+        android:background="#FDFCFF"
+        android:hint="@string/project_on_github_link"
+        android:textColorHint="@color/design_default_color_on_secondary"
+        android:inputType="textNoSuggestions"
+        android:textColor="#101010"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="167dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#F49E1E"
+        android:text="@string/submit_button_text"
+        android:textColor="#F5F4F6"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
