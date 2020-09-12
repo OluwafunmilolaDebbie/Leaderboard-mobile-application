@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle("LEADERBOARD");
 
+
         sContext = getApplicationContext();
         mTabLayout = findViewById(R.id.tabLayout);
 
@@ -64,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(),
                 mTabLayout.getTabCount(), sContext);
         mViewPager.setAdapter(pagerAdapter);
+
+
 
 
 
